@@ -1,0 +1,171 @@
+.nav-item{
+    border-bottom: 1px solid #f19e381c;
+    padding-bottom: 20px;
+
+}
+ 
+.bg-hero {
+  background-image: url("../img/main.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-services {
+  background-image: url("../img/services.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-primary {
+  background-color: #f19e38 !important;
+}
+.color-primary {
+  color: #f19e38 !important;
+}
+.scrollable-text {
+  height: 245px;
+  overflow-y: scroll;
+  direction: rtl; /* Moves scrollbar to the left */
+  padding-left: 10px; /* Ensures text doesn't align right */
+  text-align: left;
+  word-spacing: 2px;
+}
+.box {
+  height: 300px;
+  position: relative;
+}
+.h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  text-align: left;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.h3 {
+  bottom: 10px;
+  left: 40px;
+  font-weight: 500;
+  font-size: medium;
+}
+h1 {
+  font-weight: 700 !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f19e38; /* Scrollbar color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    to right,
+    transparent,
+    transparent,
+    #fff,
+    transparent,
+    transparent
+  ); /* Scrollbar background */
+}
+/* Navigation Links Hover and Active Effects */
+/* .nav-link {
+transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+color: #ffc107; / 
+background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.nav-link.active {
+color: #ffc107; 
+font-weight: bold;  
+}
+
+
+.header-social-link {
+transition: background-color 0.3s ease;
+}
+
+.header-social-link:hover {
+background-color: rgba(255, 255, 255, 0.2);  
+}
+
+.nav-link:focus, .header-social-link:focus {
+outline: 2px solid #ffc107; 
+} */
+/* Navigation Links with Bottom Border Effect */
+/* Navigation Links with Bottom Border Effect */
+.nav-link {
+  position: relative; /* Necessary for the pseudo-element */
+  padding-bottom: 5px; /* Space for the bottom border */
+  color: #e79a3b; /* Default text color */
+  transition: color 0.3s ease; /* Transition for text color */
+}
+
+/* Add a bottom border on hover */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  height: 4px; /* Height of the bottom border */
+  width: 80%; /* Full width of the link */
+  background-color: transparent; /* Initial state */
+  transition: background-color 0.3s ease; /* Transition for smooth effect */
+  border-radius: 1px;
+}
+
+/* Change text color and border color on hover */
+.nav-link:hover {
+  color: #ffc107; /* Change text color on hover */
+}
+
+.nav-link:hover::after {
+  background-color: #ffc107; /* Color of the border on hover */
+}
+
+/* Active Link State */
+.nav-link.active {
+  color: #ffc107 !important; /* Change text color for active link */
+}
+
+.nav-link.active::after {
+  background-color: #ffc107; /* Active link border color */
+}
+
+.bot {
+  letter-spacing: 2px;
+}
+.arrow {
+  max-height: 30px;
+}
+.nav .nav-item .nav-link {
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.btn-link {
+  --bs-btn-font-weight: 400;
+  --bs-btn-color: #f19e38 !important;
+  text-decoration: none !important;
+  direction: ltr;
+}
+.collapsed {
+  color: #fff !important;
+}
+.btn-link:hover {
+  color: #f19e38 !important;
+  text-decoration: none !important;
+}
+.card-body {
+  padding-left: 30px;
+}
+.border-primary {
+  border-color: #f19e38 !important;
+}
+.text-light.text-decoration-none:hover {
+  text-decoration: underline;
+  color: #f19e38 !important;
+}
+ 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnific Popup Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+</head>
+<body>
+
+<div class="gallery">
+    <a href="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp" title="Image 1" class="popup-link">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp" alt="Thumbnail 1">
+    </a>
+    <a href="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp" title="Image 2" class="popup-link">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp" alt="Thumbnail 2">
+    </a>
+    <a href="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp" title="Image 3" class="popup-link">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp" alt="Thumbnail 3">
+    </a>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        },
+        mainClass: 'mfp-fade',
+        removalDelay: 300
+    });
+});
+</script>
+
+</body>
+</html>
